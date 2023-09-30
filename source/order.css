@@ -1,10 +1,14 @@
-html{
-    font-size: 24px;
+table {
+    background-color: azure;
 }
-table.seat td{
-    background-color:greenyellow;
+th,
+thead {
+    background-color: cornflowerblue;
 }
 
-label, legend, table > caption{
+label,
+summary,
+legend,
+table>caption {
     font-weight: bold;
 }
