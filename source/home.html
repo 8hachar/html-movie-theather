@@ -58,6 +58,51 @@
           near the big screen<br />
           follow the smell of the popcorn
         </address>
+        <details>
+          <summary>or fill this form and we will contact you:</summary>
+          <form>
+            <fieldset>
+              <legend>personal details</legend>
+              <label for="input-contact-first-name">first name </label>
+              <input id="input-contact-first-name" required />
+              <br />
+              <label for="input-contact-last-name">last name </label>
+              <input id="input-contact-last-name" required />
+              <br />
+              <label for="input-contact-age">age </label>
+              <input
+                type="number"
+                id="input-contact-age"
+                min="1"
+                max="200"
+                step="1"
+              />
+              <br />
+              <label for="input-contact-phone-number">phone number </label>
+              <input type="tel" id="input-contact-phone-number" required />
+              <br />
+              <label for="input-contact-email">mail</label>
+              <input type="email" id="input-contact-email" required />
+            </fieldset>
+            <legend id="input-contact-reason">reason</legend>
+            <select required>
+              <legend>subject</legend>
+              <option>buying tickets</option>
+              <option>information about movies</option>
+              <option>checking our prices for events</option>
+              <option>other</option>
+            </select>
+            <br />
+            <label for="input-contact-description">description<br /></label>
+            <textarea
+              id="input-contact-description"
+              cols="42%"
+              placeholder="describe what you need shortly"
+              maxlength="240"
+            >
+            </textarea>
+          </form>
+        </details>
       </article>
     </footer>
   </body>
