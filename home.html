@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+
+    <title>pop & chill</title>
+    <link rel="icon" href="/images/popcorn.webp" />
+  </head>
+  <body>
+    <header>
+      <h1>Pop & chill</h1>
+      <img alt="popcorn image" src="images/movie.webp" width="400px" />
+      <hr />
+      <nav>
+        <ul>
+          <li>check out our <a href="movies.html">movies</a></li>
+          <li><a href="order.html">buy tickets</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+    <main>
+      <article>
+        <h2>our movies:</h2>
+        <section>
+          <h3>the top 5 classics</h3>
+          <ol>
+            <li>avatar</li>
+            <li>Avengers: Endgame</li>
+            <li>Avatar: the way of the water</li>
+            <li>Titanic</li>
+            <li>Star wars VII</li>
+          </ol>
+        </section>
+        <section>
+          <h3>new releases</h3>
+          <ul>
+            <li>barbie</li>
+            <li>oppenheimer</li>
+            <li>the fault in our stars</li>
+            <li>a silent voice in the darkness</li>
+            <li>and much more...</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <article>
+        <h2>contact us</h2>
+        <a href="tel:0585842100"> call us </a>
+        <br />
+        <a href="mailto:xzamir2648@gmail.com"> mail us </a>
+        <address>
+          <h3>visit us at</h3>
+          coca cola factory<br />
+          near the big screen<br />
+          follow the smell of the popcorn
+        </address>
+        <details>
+          <summary>or fill this form and we will contact you:</summary>
+          <form>
+            <fieldset>
+              <legend>personal details</legend>
+              <label for="InputContactfirstName">first name </label>
+              <input id="InputContactfirstName" required />
+              <br />
+              <label for="InputContactlastName">last name </label>
+              <input id="InputContactLastName" required />
+              <br />
+              <label for="InputContactAge">age </label>
+              <input
+                type="number"
+                id="InputContactAge"
+                min="1"
+                max="200"
+                step="1"
+              />
+              <br />
+              <label for="InputContactPhoneNumber">phone number </label>
+              <input type="tel" id="InputContactPhoneNumber" required />
+              <br />
+              <label for="InputContactEmail">mail</label>
+              <input type="email" id="InputContactEmail" required />
+            </fieldset>
+            <legend id="InputContactReason">reason</legend>
+            <select required>
+              <legend>subject</legend>
+              <option>buying tickets</option>
+              <option>information about movies</option>
+              <option>checking our prices for events</option>
+              <option>other</option>
+            </select>
+            <br />
+            <label for="InputContactDescription">description<br /></label>
+            <textarea
+              id="InputContactDescription"
+              cols="42%"
+              placeholder="describe what you need shortly"
+              maxlength="240"
+            >
+            </textarea>
+          </form>
+        </details>
+      </article>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+html{
+    font-size: 24px;
+}
+table.seat td{
+    background-color:greenyellow;
+}
+
+label, legend, table > caption{
+    font-weight: bold;
+}

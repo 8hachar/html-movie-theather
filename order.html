@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="order.css" />
+
+    <title>pop & chill</title>
+    <link rel="icon" href="/images/popcorn.webp" />
+  </head>
+  <body>
+    <header>
+      <h1>order tickets and pops</h1>
+      <hr />
+      <nav>
+        <ul>
+          <li>check out our <a href="movies.html">movies</a></li>
+          <li>go to the <a href="home.html">homepage</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+    <main>
+      <form id="purchase-tickets">
+        <h2>order tickets</h2>
+
+        <div class="field-ordering">
+          <label for="input-order-movie">choose movie</label>
+          <select id="input-order-movie" required>
+            <option disabled selected value>--select movie--</option>
+            <option>ratatouille</option>
+            <option>barbie</option>
+            <option>oppenheimer</option>
+            <option>Spirit: Stallion of the Cimarron</option>
+          </select>
+          <br>
+          <label for="input-order-date">choose date</label>
+          <input id="input-order-date" type="date">
+          <br>
+          <label for="input-order-time">select screening</label>
+          <select>
+            <option disabled selected value>--select screening--</option>
+            <option>13:00</option>
+            <option>15:00</option>
+            <option>17:00</option>
+            <option>19:00</option>
+            <option>21:00</option>
+            <option>23:00</option>
+          </select>
+        </div>
+
+        <table class="seat">
+          <caption>
+            choose seats
+          </caption>
+          <thead>
+            <th></th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+          </thead>
+          <tr>
+            <th>a</th>
+            <td>
+              <input type="checkbox" name="seat['a'][1]" value="a1" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['a'][2]" value="a2" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['a'][3]" value="a3" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['a'][4]" value="a4" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['a'][5]" value="a5" />
+            </td>
+          </tr>
+          <tr>
+            <th>b</th>
+            <td>
+              <input type="checkbox" name="seat['b'][1]" value="b1" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['b'][2]" value="b2" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['b'][3]" value="b3" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['b'][4]" value="b4" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['b'][5]" value="b5" />
+            </td>
+          </tr>
+          <tr>
+            <th>c</th>
+            <td>
+              <input type="checkbox" name="seat['c'][1]" value="c1" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['c'][2]" value="c2" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['c'][3]" value="c3" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['c'][4]" value="c4" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['c'][5]" value="c5" />
+            </td>
+          </tr>
+          <tr>
+            <th>d</th>
+            <td>
+              <input type="checkbox" name="seat['d'][1]" value="d1" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['d'][2]" value="d2" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['d'][3]" value="d3" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['d'][4]" value="d4" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['d'][5]" value="d5" />
+            </td>
+          </tr>
+          <tr>
+            <th>e</th>
+            <td>
+              <input type="checkbox" name="seat['e'][1]" value="e1" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['e'][2]" value="e2" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['e'][3]" value="e3" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['e'][4]" value="e4" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['e'][5]" value="e5" />
+            </td>
+          </tr>
+          <tr>
+            <th>f</th>
+            <td>
+              <input type="checkbox" name="seat['f'][1]" value="ITEM1" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['f'][2]" value="ITEM1" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['f'][3]" value="ITEM1" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['f'][4]" value="ITEM1" />
+            </td>
+            <td>
+              <input type="checkbox" name="seat['f'][5]" value="ITEM1" />
+            </td>
+          </tr>
+        </table>
+        <fieldset id="personalization">
+          <legend>add people's names to the tickets</legend>
+          <label for="InputOrderPersonalizationFirstName">First name:</label>
+          <input
+            id="InputOrderPersonalizationFirstName"
+            name="first name"
+          /><br />
+          <label for="InputOrderPersonalizationLastName">Last name:</label>
+          <input
+            id="InputOrderPersonalizationLastName"
+            name="last name"
+          /><br />
+
+          <label for="InputOrderPersonalizationMessage"
+            >personalized message:</label
+          >
+          <input
+            id="InputOrderPersonalizationMessage"
+            name="personalized message"
+          />
+          <br>
+          <button type="submit" form="personalization">add personalized message</button>
+        </fieldset>
+      </form>
+      <button type="submit" form="purchase-tickets">buy tickets</button>
+    </main>
+    <hr>
+    <footer>
+      <address>
+        <h3>visit us at</h3>
+        coca cola factory<br />
+        near the big screen<br />
+        follow the smell of the popcorn
+      </address>
+    </footer>
+  </body>
+</html>
