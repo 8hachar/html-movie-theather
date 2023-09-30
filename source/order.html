@@ -23,7 +23,7 @@
     </header>
     <main>
       <h2>order tickets</h2>
-      <form id="purchase-tickets">
+      <form id="form-purchase-tickets" name="purchase tickets">
 
         <div class="field-ordering">
           <label for="input-order-movie">choose movie</label>
@@ -39,7 +39,7 @@
           <input id="input-order-date" type="date">
           <br>
           <label for="input-order-time">select screening</label>
-          <select>
+          <select id="input-order-time">
             <option disabled selected value>--select screening--</option>
             <option>13:00</option>
             <option>15:00</option>
@@ -199,14 +199,14 @@
     </main>
     <footer>
       <address>
-        <h3>visit us at</h3>
+        <h3>see our movie at</h3>
         coca cola factory<br />
         near the big screen<br />
         follow the smell of the popcorn
       </address>
       <details>
         <summary>or fill this form and we will contact you:</summary>
-        <form>
+        <form id="form-contact-us" name="contact-us">
           <fieldset>
             <legend>personal details</legend>
             <label for="input-contact-first-name">first name </label>
@@ -230,8 +230,8 @@
             <label for="input-contact-email">mail</label>
             <input type="email" id="input-contact-email" required />
           </fieldset>
-          <legend id="input-contact-reason">reason</legend>
-          <select required>
+          <label for="input-contact-reason">reason</label>
+          <select required id="input-contact-reason">
             <legend>subject</legend>
             <option>buying tickets</option>
             <option>information about movies</option>
