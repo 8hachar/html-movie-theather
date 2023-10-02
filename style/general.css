@@ -1,0 +1,14 @@
+html {
+  font-size: 24px;
+}
+
+form {
+  background-color: gainsboro;
+  padding: 10px;
+}
+
+label,
+summary,
+legend {
+  font-weight: bold;
+}

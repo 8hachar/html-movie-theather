@@ -1,0 +1,14 @@
+table {
+  background-color: azure;
+}
+th,
+thead {
+  background-color: cornflowerblue;
+}
+
+label,
+summary,
+legend,
+table > caption {
+  font-weight: bold;
+}
